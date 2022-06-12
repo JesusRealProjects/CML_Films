@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+*{
+  margin: 0%;
+  padding: 0%;
+  
+}
+#navpeli{
+  width: 100%;
+  height: 7%;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navpeli >*{
+  height: 80%;
+
+}
+nav{
+  width: 100%;
+  height: 10vh;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  
+}
+nav >a{
+  margin: auto;
+  position: relative;
+  top: 30%;
+  left: 2%;
+  right: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  height: 60%;
+  width: 10%;
+  font-size: 5vh;
+  float: left;
+  background-color: orange;
+  border-radius: 30%;
+  
+}
+nav >*:hover{
+  opacity: 50%;
+
+}
+nav img{
+  position: absolute;
+  height: 15%;
+  left: 5%;
+  top: 3%;
+  background-color: transparent;
+}
+#cont_user{
+  position: fixed;
+  width: 20%;
+  height:100vh;
+  background-color: rgba(82, 78, 78, 0.989);
+  z-index: 2;
+}
+.bloque{
+  height: 7%;
+  width: 100%;
+}
+#see_menu{
+  position: absolute;
+  top:12%;
+  left: 100%;
+  background-color: rgb(246, 238, 238);
+  width: 15%;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5vh;
+  font-weight: bold;
+  color: black ;
+  border-bottom-right-radius: 80%;
+  border-top-right-radius: 80%;
+
+}
+
+#cont_cine{
+  width: 80%;
+  float: right;
+  background-color: rgb(18, 18, 16);
+}
+#cont_sesion{
+  display: initial;
+  width: 100%;
+  height: 30%;
+  background-color: green;
+}
+#cont_sesion input{
+  margin: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vh;
+  border-radius: 30%;
+  border: 1vh solid black;
+  width: 80%;
+  height: 10%;
+  font-weight: bold;
+
+
+}
+#cont_datos,#cont_login,#cont_register{
+  display: none;
+  width: 100%;
+  overflow: hidden;
+
+  
+}
+#cont_datos{
+  width: 100%;
+  background-color: red;
+}
+#cont_datos p,#cont_login p,#cont_register p{
+  width: 90%;
+  height: 5%;
+  font-size: 4vh;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+
+#cont_datos .datos {
+  display: flex;
+  justify-content: center;
+  height: 5%;
+  text-align: center;
+  font-size: 2.2vh;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  
+  overflow: hidden;
+
+}
+#register_user_admin{
+  display: none;
+}
+#cont_login input,#cont_datos input,#cont_register input, #cont_register select{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 90%;
+  font-weight: bold;
+  margin: auto;
+  margin-bottom: 5%;
+  color: blue;
+  font-size: 3vh;
+  text-align: center;
+  height: 5%;
+  border: none;
+}
+#cont_register p {
+margin-top: 2%;
+}
+
+#cont_facturas {
+  display: none;
+  width: 100%;
+}
+
+#cont_facturas >*{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 90%;
+  margin: auto;
+  color: blue;
+  font-size: 3vh;
+  text-align: center;
+  height: 5%;
+  border: none;
+  margin-top: 2%;
+}
+#cont_facturas b{
+  display: flex;
+  margin: auto;
+  position: relative;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  color: yellow;
+
+}
+#cont_facturas >p{
+  background-color: rgb(193, 193, 241);
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
+#cont_facturas >p:hover{
+  background-color: rgb(171, 171, 245);
+}
+
+
+#ver_reservas{
+  margin: auto;
+}
+#login_user,#logof_user,#register_user{
+  background-color: orange;
+}
+footer{
+  position: relative;
+  clear: both;
+  width: 100%;
+  background-color: black;
+  padding: 5%;
+  z-index: 1;
+}
+footer> p {
+height:  6vh;  
+display: flex;
+align-items: center;
+margin-left: 5%;
+font-size: 3vh;
+text-decoration: none;
+
+}
+footer a{
+  text-decoration: none;
+  color: rgb(247, 177, 48);
+
+}
+footer img{
+  right: 10%;
+  top: 0%;
+  height: 100%;
+  position: absolute;
+}

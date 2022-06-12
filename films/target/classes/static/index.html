@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Carta</title>
+        <meta name="viewport" user-scalable="no" content="width=device-width, initial-scale=1">
+        <META HTTP-EQUIV="REFRESH" CONTENT="5;URL=./pelis">
+
+
+        <link rel="stylesheet" type="text/css" href="css/pelis.css">
+		<link rel="stylesheet" type="text/css" href="css/menu.css">    
+	</head>
+	<body>
+
+		<div id="cont_user">
+            <div class="bloque"></div>
+            <div id="see_menu">&lt;</div>  
+          
+            <div id="cont_sesion">
+              <input type="submit" id="menuRegister" value="REGISTRATE">
+              <input type="submit" id="menuLogin" value="ENTRA">
+            </div>
+            <div id="cont_datos">
+                <p>USUARIO</p>
+                <p class="datos" id="dato_nombre"></p>
+                <p>EMAIL</p>
+                <p class="datos" id="dato_email"></p>
+                <p>TIPO USUARIO</p>
+                <p class="datos" id="dato_tipo"></p>
+                <input type="submit" id="ver_reservas" value="RESERVAS">
+                <input type="submit" id="register_user_admin" value="REGISTRAR">
+                <input type="submit" id="logof_user" value="CERRAR">
+
+            </div> 
+            <div id="cont_login">
+                <p>USUARIO</p>
+                <input type="text" id="inputLUser" required>
+                <p>PASSWORD</p>
+                <input type="PASSWORD" id="inputLPassword" required>
+                <input type="submit" id="login_user" value="INICIAR">
+                <input type="submit" class="go_cont_sesion" value="ATRAS">
+            </div>
+            <div id="cont_register">
+                <p>USUARIO</p>
+                <input type="text" id="inputRUser" required>
+                <p>EMAIL</p>
+                <input type="text" id="inputREmail" required>
+                <p>PASSWORD</p>
+                <input type="PASSWORD" id="inputRPassword" required>
+                <p>TIPO</p>
+                <select name="menu" id="tipoClienteR">
+                    <option value="usuario"selected>usuario</option>
+                    <option value="trabajador">trabajador</option>
+                    <option value="administrador" >administrador</option>
+                  </select>
+                <input type="submit" id="register_user" value="REGISTRAR">
+                <input type="submit" class="go_cont_sesion" value="ATRAS">
+            </div> 
+            <div id="cont_facturas">
+                
+            </div>                  
+          
+               
+        </div>
+
+        <div id="cont_cine">
+            <nav>
+                <a href="#"><p>HOME</p></a>
+                <img src="../img/VeredaCine.png"></img>
+            </nav>
+            <div id="cont_pelis">
+
+            </div>
+        </div>
+
+        <footer id="footer">
+            <p><a href="#">Desarrollado por Jensus</a></p>
+            <p><a href="#">Politicas de privacidad</a></p>
+            <p><a href="#">Terminos y condiciones de uso</a></p>
+            <img src="./img/VeredaCine.png"></img>
+        </footer>
+
+        <script src="../js/jspdf.min.js"></script>
+        <script type="module" src="js/menu_login.js"></script>
+        <script type="module" src="js/pelis.js"></script>
+
+	</body>
+</html>
